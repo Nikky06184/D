@@ -1,0 +1,54 @@
+
+If you're looking for sample data to populate your loan management system for the proof of concept (POC), here's an example dataset you can use:
+
+Customers:
+
+Customer ID
+Name
+Email
+Phone Number
+Address
+Loans:
+
+Loan ID
+Customer ID (foreign key)
+Loan Amount
+Interest Rate
+Loan Term
+Loan Status (e.g., pending, approved, paid off)
+Payments:
+
+Payment ID
+Loan ID (foreign key)
+Payment Amount
+Payment Date
+Payment Status (e.g., completed, pending)
+Administrators:
+
+Admin ID
+Username
+Password (hashed)
+Email
+Here's an example of how you can populate this data:
+
+Customers:
+
+1, John Doe, john@example.com, 1234567890, 123 Main St, Anytown, USA
+2, Jane Smith, jane@example.com, 9876543210, 456 Elm St, Othertown, USA
+Loans:
+
+1, 1, 10000, 5.0, 12, approved
+2, 2, 5000, 6.0, 24, pending
+3, 1, 15000, 4.5, 18, paid off
+Payments:
+
+1, 1, 1000, 2024-01-15, completed
+2, 1, 1000, 2024-02-15, completed
+3, 1, 1000, 2024-03-15, completed
+4, 2, 250, 2024-02-28, pending
+Administrators:
+
+1, admin1, [hashed password], admin1@example.com
+2, admin2, [hashed password], admin2@example.com
+This is just a small sample dataset to get you started. You can expand it with more customers, loans, payments, and administrators as needed for your POC. Remember to ensure that any sensitive information (such as passwords) is properly protected, and consider using placeholder data or anonymized data if necessary.
+
